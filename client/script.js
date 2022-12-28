@@ -3,6 +3,7 @@ import user from "./asset/user.png";
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
+const heading = document.querySelector('h1');
 
 let loadInterval;
 
@@ -41,6 +42,7 @@ function generateUniqueID() {
 }
 
 function chatString (isAi, value, uniqueId) {
+  
   return (
     `
       <div class = "wrapper ${isAi && 'ai'}">
@@ -60,6 +62,7 @@ function chatString (isAi, value, uniqueId) {
 }
 
 const handleSubmit = async (e) => {
+  heading.style.display = 'none';
   e.preventDefault();
 
   const data = new FormData(form);

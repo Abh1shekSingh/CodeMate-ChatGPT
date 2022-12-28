@@ -14,7 +14,7 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: #ececf1;
 
   display: flex;
   flex-direction: column;
@@ -52,7 +52,9 @@ body {
 }
 
 .ai {
-  background: #40414F;
+  background: #e7e7e7;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 .chat {
@@ -69,10 +71,10 @@ body {
 .profile {
   width: 36px;
   height: 36px;
-  border-radius: 5px;
+  border-radius: 2px;
 
   background: #5436DA;
-
+margin-right: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,8 +93,8 @@ body {
 .message {
   flex: 1;
 
-  color: #dcdcdc;
-  font-size: 20px;
+  color: #343541;
+  font-size: 18px;
 
   max-width: 100%;
   overflow-x: scroll;
@@ -110,27 +112,29 @@ body {
 
 form {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
+  background: #fff;
   /* border-radius: 15px; */
   display: flex;
   flex-direction: row;
   gap: 10px;
+  border: 1px solid #d1d1d1;
   position: relative;
 }
 
 textarea {
   width: 100%;
 
-  color: #fff;
-  font-size: 18px;
+  color:#343541;
+  font-size: 16px;
 
   padding: 10px;
   background: transparent;
   border-radius: 5px;
   border: none;
+  resize: none;
   outline: none;
 }
 
@@ -142,6 +146,15 @@ button {
 }
 
 form img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto ;
+  font-size: 40px;
+  color:#343541 ;
 }
